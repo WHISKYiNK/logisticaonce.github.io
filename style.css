@@ -1,0 +1,330 @@
+.fondo{
+    background-image:  linear-gradient(140deg,
+    #63d4fd,#ff8000,#2e4dab,#ffe100);
+    
+    background-size: 500%;
+    animation: animado 5s infinite;
+
+    
+    }
+
+   .img {
+    display: block;
+    margin: auto;
+   }
+   
+   .frase{
+    text-align: center;
+    font-family: fantasy;
+  border-color: #000000 2px;
+}
+
+.hero-pro {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1E4F8A, #0f172a);
+  color: white;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.cta {
+  background: #F26522;
+  padding: 14px 22px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.PRECIOS {   
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+   
+}
+
+.INFORMACION{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.card{
+      flex: 0 0 90%;
+  height: 300px;
+
+  scroll-snap-align: center;
+
+  display: flex;
+  align-items: center;
+      justify-content: center;
+
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+
+  color: rgb(0, 0, 0);
+
+  border-radius: 20px;
+
+  /* 🔥 efecto visual fuerte */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.53);
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+.contenedor{
+    display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+ background-color: #ff9900;
+}
+.contenedor::-webkit-scrollbar {
+  display: none;
+}
+
+.comentarios {
+  background: #0b3fb98d;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.comentarios textarea {
+  width: 100%;
+  height: 120px;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+
+.comentarios button {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comentarios button:hover {
+  background: #1ebe5d;
+}
+
+    .why {
+  background: #052c87ba;
+  color: rgb(0, 0, 0);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* contenedor */
+.why-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* cards */
+.why-card {
+  background: #2f8ae0cf;
+  padding: 25px;
+  border-radius: 15px;
+
+  width: 220px;
+
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.why-card h3 {
+  margin: 10px 0;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  background: #f59d74;
+}
+
+.price-box {
+  background: linear-gradient(135deg, #89b7ef69, #F26522);
+  color: white;
+
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.price-box2 {
+  background: linear-gradient(135deg, #bad4fcb7, #f26422e1);
+  color: rgb(8, 0, 0);
+
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.redes-flotantes {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column; /* 👈 uno abajo del otro */
+  gap: 10px;
+
+  z-index: 1000;
+}
+
+.redes-flotantes img {
+  width: 60px;
+  height: 60px;
+
+  object-fit: contain;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.103);
+  transition: transform 0.3s ease;
+  
+}
+
+.redes-flotantes img:hover {
+  transform: scale(1.15);
+}
+
+/* 📱 MOBILE (celulares) */
+@media (max-width: 768px) {
+
+  .hero-pro {
+    padding: 40px 15px;
+  }
+
+  .hero-pro h1 {
+    font-size: 24px;
+  }
+
+  .hero-pro p {
+    font-size: 14px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .why-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-card {
+    width: 90%;
+  }
+
+  .contenedor {
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    flex: 0 0 90%;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .price-box,
+  .price-box2 {
+    font-size: 16px;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .comentarios {
+    padding: 20px;
+  }
+
+  .comentarios textarea {
+    height: 100px;
+  }
+
+  /* redes flotantes más chicas */
+  .redes-flotantes {
+    left: 10px;
+  }
+
+  .redes-flotantes img {
+    width: 45px;
+    height: 45px;
+  }
+
+}
+
+/* 📱 TABLET */
+@media (max-width: 1024px) {
+
+  .why-card {
+    width: 45%;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+}
